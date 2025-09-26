@@ -1,0 +1,51 @@
+{
+  "type": "directory",
+  "content": {
+    "home": {
+      "type": "directory",
+      "content": {
+        "user": {
+          "type": "directory",
+          "content": {
+            "documents": {
+              "type": "directory",
+              "content": {
+                "file1.txt": {"type": "file", "content": "Hello World!"},
+                "file2.txt": {"type": "file", "content": "Test content"}
+              }
+            },
+            "pictures": {
+              "type": "directory",
+              "content": {
+                "photo1.jpg": {"type": "file", "content": "JPEG data"},
+                "photo2.png": {"type": "file", "content": "PNG data"}
+              }
+            },
+            "readme.md": {"type": "file", "content": "# Welcome\\nThis is a readme file."}
+          }
+        }
+      }
+    },
+    "etc": {
+      "type": "directory",
+      "content": {
+        "config.conf": {"type": "file", "content": "key=value\\nport=8080"}
+      }
+    },
+    "tmp": {
+      "type": "directory",
+      "content": {}
+    },
+    "var": {
+      "type": "directory",
+      "content": {
+        "log": {
+          "type": "directory",
+          "content": {
+            "system.log": {"type": "file", "content": "System started\\nEverything OK"}
+          }
+        }
+      }
+    }
+  }
+}
