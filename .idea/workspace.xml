@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/konf_upr.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="первый_этап">
+      <change afterPath="$PROJECT_DIR$/ShellEmulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VirtualFileSystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwer/ShellEmulator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwer/VirtualFileSystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwer/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwer/utils/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/imports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qwer/utils/vfs_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/vfs_structure.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="33Eityn46QbewkqIi2kh6P7vbDP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.ShellEmulator.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -60,9 +64,20 @@
       <option name="presentableId" value="Default" />
       <updated>1758888850851</updated>
     </task>
+    <task id="LOCAL-00001" summary="первый_этап">
+      <option name="closed" value="true" />
+      <created>1758905166180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758905166180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="первый_этап" />
+    <option name="LAST_COMMIT_MESSAGE" value="первый_этап" />
   </component>
 </project>
