@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="первый_этап">
-      <change afterPath="$PROJECT_DIR$/ShellEmulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VirtualFileSystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="второй_и_третий_этапы_с_небольшими_исправлениями+скрипт">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwer/ShellEmulator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwer/VirtualFileSystem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwer/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwer/utils/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/imports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwer/utils/vfs_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/vfs_structure.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/vfs_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/vfs_structure.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +28,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.ShellEmulator.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.ShellEmulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anastasia\PycharmProjects\konf_upr\tests" />
       <recent name="C:\Users\Anastasia\PycharmProjects\konf_upr" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="konf_upr" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -72,12 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1758905166180</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="второй_и_третий_этапы_с_небольшими_исправлениями+скрипт">
+      <option name="closed" value="true" />
+      <created>1758910593836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758910593836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="первый_этап" />
-    <option name="LAST_COMMIT_MESSAGE" value="первый_этап" />
+    <MESSAGE value="второй_и_третий_этапы_с_небольшими_исправлениями+скрипт" />
+    <option name="LAST_COMMIT_MESSAGE" value="второй_и_третий_этапы_с_небольшими_исправлениями+скрипт" />
   </component>
 </project>

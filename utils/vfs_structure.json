@@ -17,7 +17,7 @@
             "pictures": {
               "type": "directory",
               "content": {
-                "photo1.jpg": {"type": "file", "content": "JPEG data"},
+                "photo1.jpg": {"type": "file", "content_b64": "aGVsbG8="},
                 "photo2.png": {"type": "file", "content": "PNG data"}
               }
             },

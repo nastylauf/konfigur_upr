@@ -4,8 +4,6 @@
 import sys
 import os
 from ShellEmulator import ShellEmulator
-
-
 def main():
     """Точка входа в приложение"""
     # Обработка параметров командной строки
@@ -52,7 +50,7 @@ def main():
         if not success:
             sys.exit(1)
     except Exception as e:
-        print(f"КРИТИЧЕСКАЯ ОШИБКА: {e}")
+        print(f"ОШИБКА: {e}")
         sys.exit(1)
 
 

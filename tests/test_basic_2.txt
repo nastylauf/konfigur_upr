@@ -1,0 +1,27 @@
+# === ЕЩЁ ОДИН ТЕСТ ФУНКЦИОНАЛЬНОСТИ VFS ===
+# Проверяем навигацию и чтение существующих файлов в VFS
+
+echo "Начало теста базовой функциональности VFS"
+pwd
+ls
+cd documents
+pwd
+ls
+cat file1.txt
+cat file2.txt
+cd ..
+pwd
+cd pictures
+ls
+cd /etc
+pwd
+ls
+cat config.txt
+cd /var/log
+pwd
+ls
+cat system.log
+cd /home/user
+pwd
+echo "Базовый тест VFS завершен успешно"
+exit

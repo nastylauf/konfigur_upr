@@ -1,0 +1,64 @@
+# === ТЕСТ ОБРАБОТКИ ОШИБОК И ГРАНИЧНЫХ СЛУЧАЕВ ===
+# Проверяем реакцию на неверные команды и пути
+
+echo "Начало теста обработки ошибок"
+pwd
+
+# Проверка несуществующих путей
+cd /nonexistent_directory
+cd invalid_path
+
+# Проверка файлов как директорий
+cd /etc/config.txt
+
+# Проверка cat с несуществующими файлами
+cat nonexistent_file.txt
+cat /home/user/documents/missing_file.txt
+
+# Проверка cat с директориями
+cat /home/user/documents
+
+# Проверка ls с файлами (должен работать)
+ls /etc/config.txt
+
+# Проверка пустых команд и пробелов
+
+
+# Проверка команд с лишними пробелами
+pwd
+ls   /home/user/documents
+cd   ..
+
+# Проверка специальных символов в путях
+cd ..
+pwd
+cd ./documents
+pwd
+cd ../pictures
+pwd
+
+# Проверка абсолютных и относительных пучей
+cd /home/user/documents
+pwd
+cd ../../etc
+pwd
+cd ../home/user/pictures
+pwd
+
+# Проверка команд-заглушек
+mkdir new_directory
+touch new_file.txt
+mkdir dir1 dir2 dir3
+touch file1.py file2.js file3.html
+
+# Проверка echo с разными аргументами
+echo Hello World
+echo "Text with spaces"
+echo Multiple arguments test
+echo
+
+# Возврат в домашнюю директорию
+cd /home/user
+pwd
+echo "Тест обработки ошибок завершен успешно"
+exit
