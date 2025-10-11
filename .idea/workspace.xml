@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="2_3_этапы_и_скрипты_в_отдельную_папку">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/stage4_test.txt" afterDir="false" />
+    <list default="true" id="0bed7089-9086-490b-860c-453bec5c732a" name="Changes" comment="README.md added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShellEmulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShellEmulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VirtualFileSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualFileSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/vfs_structure.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/vfs_structure.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +118,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758969716740</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="README.md added">
+      <option name="closed" value="true" />
+      <created>1760175665662</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760175665662</updated>
+    </task>
+    <task id="LOCAL-00006" summary="README.md added">
+      <option name="closed" value="true" />
+      <created>1760175674539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760175674539</updated>
+    </task>
+    <task id="LOCAL-00007" summary="README.md added">
+      <option name="closed" value="true" />
+      <created>1760175692525</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760175692525</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +150,7 @@
     <MESSAGE value="первый_этап" />
     <MESSAGE value="второй_и_третий_этапы_с_небольшими_исправлениями+скрипт" />
     <MESSAGE value="2_3_этапы_и_скрипты_в_отдельную_папку" />
-    <option name="LAST_COMMIT_MESSAGE" value="2_3_этапы_и_скрипты_в_отдельную_папку" />
+    <MESSAGE value="README.md added" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md added" />
   </component>
 </project>

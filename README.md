@@ -35,10 +35,40 @@
 
 ### Запуск
 
-#### Интерактивный режим
+#### Пример запуска
 ```bash
-python main.py <путь_к_VFS> <путь_к_скрипту>
+python main.py utils/vfs_structure.json tests/stage4_test.txt
 ```
+Пример вывода
+```bash
+==================================================
+КОНФИГУРАЦИЯ ЭМУЛЯТОРА
+==================================================
+Путь к VFS: utils/vfs_structure.json
+Путь к стартовому скрипту: tests/stage4_test.txt
+==================================================
+
+Anastasia@LAPTOP-V969GJES:~$ pwd
+/home/user
+
+Anastasia@LAPTOP-V969GJES:~$ ls
+755 documents/
+755 empty_dir1/
+755 pictures/
+644 readme.md
+
+Anastasia@LAPTOP-V969GJES:~$ ls /home/user
+755 documents/
+755 empty_dir1/
+755 pictures/
+644 readme.md
+
+Anastasia@LAPTOP-V969GJES:~$ ls /nonexistent
+ОШИБКА В СКРИПТЕ: Нет доступа к '/nonexistent': Нет такого файла или каталога
+ОШИБКА: Нет доступа к '/nonexistent': Нет такого файла или каталога
+
+```
+
 ```bash
 project/
 ├── main.py                 # Основной файл запуска
@@ -81,4 +111,3 @@ VFS
   }
 }
 ```
-
