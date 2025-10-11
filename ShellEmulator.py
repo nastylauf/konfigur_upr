@@ -3,6 +3,8 @@ import socket
 import getpass
 import os
 import sys
+import calendar
+from datetime import datetime
 from VirtualFileSystem import VirtualFileSystem
 
 
@@ -82,6 +84,18 @@ class ShellEmulator:
             elif command == "touch":
                 self.touch_command(args)
 
+            elif command == "rev":
+                self.rev_command(args)
+
+            elif command == "cal":
+                self.cal_command(args)
+
+            elif command == "rmdir":
+                self.rmdir_command(args)
+
+            elif command == "chmod":
+                self.chmod_command(args)
+
             else:
                 print(f"{command}: команда не найдена")
                 if self.script_mode:
@@ -111,8 +125,9 @@ class ShellEmulator:
         files = list(node['content'].keys())
         for file in sorted(files):
             file_type = node['content'][file]['type']
+            permissions = node['content'][file].get('permissions', '644')
             indicator = '/' if file_type == 'directory' else ''
-            print(f"{file}{indicator}")
+            print(f"{permissions} {file}{indicator}")
 
     def cd_command(self, args):
         """Команда cd"""
@@ -159,16 +174,98 @@ class ShellEmulator:
         print(' '.join(args))
 
     def mkdir_command(self, args):
-        """Команда mkdir (заглушка)"""
+        """Команда mkdir"""
         if not args:
             raise RuntimeError("Отсутствуют аргументы")
-        print(f"mkdir: создание директорий {args} (в памяти VFS)")
+
+        for dir_path in args:
+            success = self.vfs.create_directory(self.current_path, dir_path)
+            if not success:
+                raise RuntimeError(f"Не удалось создать директорию '{dir_path}'")
 
     def touch_command(self, args):
-        """Команда touch (заглушка)"""
+        """Команда touch"""
         if not args:
             raise RuntimeError("Отсутствуют аргументы")
-        print(f"touch: создание файлов {args} (в памяти VFS)")
+
+        for file_path in args:
+            success = self.vfs.create_file(self.current_path, file_path)
+            if not success:
+                raise RuntimeError(f"Не удалось создать файл '{file_path}'")
+
+    def rev_command(self, args):
+        """Команда rev - переворачивает строки"""
+        if not args:
+            # Читаем из stdin
+            try:
+                while True:
+                    line = input()
+                    print(line[::-1])
+            except EOFError:
+                pass
+        else:
+            # Обрабатываем аргументы
+            for arg in args:
+                print(arg[::-1])
+
+    def cal_command(self, args):
+        """Команда cal - отображает календарь"""
+        now = datetime.now()
+        year = now.year
+        month = now.month
+
+        if len(args) == 1:
+            # Только год
+            try:
+                year = int(args[0])
+                if year < 1 or year > 9999:
+                    raise ValueError("Год должен быть в диапазоне 1-9999")
+                print(calendar.calendar(year))
+            except ValueError as e:
+                raise RuntimeError(f"Неверный год: {e}")
+
+        elif len(args) == 2:
+            # Месяц и год
+            try:
+                month = int(args[0])
+                year = int(args[1])
+                if month < 1 or month > 12:
+                    raise ValueError("Месяц должен быть в диапазоне 1-12")
+                if year < 1 or year > 9999:
+                    raise ValueError("Год должен быть в диапазоне 1-9999")
+                print(calendar.month(year, month))
+            except ValueError as e:
+                raise RuntimeError(f"Неверные параметры: {e}")
+
+        elif len(args) == 0:
+            # Текущий месяц
+            print(calendar.month(year, month))
+
+        else:
+            raise RuntimeError("Неверное количество аргументов. Использование: cal [месяц] [год]")
+
+    def rmdir_command(self, args):
+        """Команда rmdir - удаляет пустые директории"""
+        if not args:
+            raise RuntimeError("Отсутствуют аргументы")
+
+        for dir_path in args:
+            success = self.vfs.remove_directory(self.current_path, dir_path)
+            if not success:
+                raise RuntimeError(f"Не удалось удалить директорию '{dir_path}'")
+
+    def chmod_command(self, args):
+        """Команда chmod - изменяет права доступа"""
+        if len(args) < 2:
+            raise RuntimeError("Недостаточно аргументов. Использование: chmod <права> <файл>")
+
+        mode = args[0]
+        targets = args[1:]
+
+        for target_path in targets:
+            success = self.vfs.change_permissions(self.current_path, target_path, mode)
+            if not success:
+                raise RuntimeError(f"Не удалось изменить права доступа для '{target_path}'")
 
     def normalize_path(self):
         """Нормализует путь"""
@@ -219,10 +316,10 @@ class ShellEmulator:
                 print(f"Ошибка: {e}")
 
     def terminal_start(self):
-        """Приветственное сообщение (как в оригинале)"""
+        """Приветственное сообщение"""
         welcome_text = (
                 "Добро пожаловать в эмулятор командной строки с VFS!\n"
-                "Доступные команды: ls, cd, pwd, cat, echo, mkdir, touch, exit\n"
+                "Доступные команды: ls, cd, pwd, cat, echo, mkdir, rev, cal, rmdir, chmod, exit\n"
                 "Виртуальная файловая система содержит:\n"
                 "  /home/user/documents/ - файлы документов\n"
                 "  /home/user/pictures/ - изображения\n"

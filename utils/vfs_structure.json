@@ -21,7 +21,11 @@
                 "photo2.png": {"type": "file", "content": "PNG data"}
               }
             },
-            "readme.md": {"type": "file", "content": "# Welcome\\nThis is a readme file."}
+            "readme.md": {"type": "file", "content": "# Welcome\\nThis is a readme file."},
+            "empty_dir1": {
+                "type": "directory",
+                "content": {}
+            }
           }
         }
       }

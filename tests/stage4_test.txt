@@ -1,0 +1,45 @@
+# Тестовый скрипт для Этапа 4
+pwd
+ls
+ls /home/user
+ls /nonexistent
+
+cd documents
+pwd
+ls
+
+cd ..
+pwd
+
+cd /var/log
+pwd
+ls
+
+cd /home/user/documents
+cat file1.txt
+cat file2.txt
+cat nonexistent.txt
+
+echo "Hello from echo command"
+echo Multiple arguments test
+
+mkdir new_directory
+ls
+cd new_directory
+pwd
+cd ..
+ls
+
+touch new_file.txt
+ls
+
+rev "Hello World"
+echo "Test line" | rev
+
+cal
+cal 12 2023
+cal 2024
+cal 13 2024
+
+cd /home/user
+pwd
